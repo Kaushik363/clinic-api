@@ -1,7 +1,4 @@
-### Get All Patients
-GET http://localhost:3000/patients
-
-### Create a Patient
+### 1. Create a Patient (creates patientId: 1)
 POST http://localhost:3000/patients
 Content-Type: application/json
 
@@ -10,3 +7,17 @@ Content-Type: application/json
   "age": 30,
   "email": "john@example.com"
 }
+
+### 2. Book an Appointment (run twice to test 201, then 409)
+POST http://localhost:3000/appointments
+Content-Type: application/json
+
+{
+  "doctorId": 1,
+  "patientId": 1,
+  "slot": "2026-11-20T10:00",
+  "reason": "Regular checkup"
+}
+
+### 3. Get All Appointments
+GET http://localhost:3000/appointments
