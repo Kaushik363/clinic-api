@@ -1,11 +1,12 @@
-### Test Home Route
-GET http://localhost:3000
+### Get All Patients
+GET http://localhost:3000/patients
 
-### Example POST Request (for later)
+### Create a Patient
 POST http://localhost:3000/patients
 Content-Type: application/json
 
 {
   "name": "John Doe",
-  "age": 30
+  "age": 30,
+  "email": "john@example.com"
 }
