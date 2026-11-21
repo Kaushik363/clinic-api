@@ -1,0 +1,11 @@
+### Test Home Route
+GET http://localhost:3000
+
+### Example POST Request (for later)
+POST http://localhost:3000/patients
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 30
+}
