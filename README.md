@@ -1,15 +1,15 @@
-# Elysia with Bun runtime
+# Clinic API
+
+A REST API for managing clinic doctors, patients, and appointment bookings, built with **Bun** and **Elysia**.
 
 ## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
 
-## Development
-To start the development server run:
 ```bash
-bun run dev
-```
+# Install dependencies
+bun install
 
-Open http://localhost:3000/ with your browser to see the result.
+# Start the development server
+bun dev
+
+# Run automated tests
+bun test
